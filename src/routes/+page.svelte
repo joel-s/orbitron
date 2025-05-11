@@ -4,6 +4,7 @@
 
 	const moonSpecs: MoonSpec[] = [
 		{ count: 3, offset: 20, size: 0 },
+		{ count: 3, offset: 20, size: 0 },
 		{ count: 3, offset: 10, size: 5, color: '#fff' }
 	];
 </script>

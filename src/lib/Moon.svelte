@@ -21,7 +21,7 @@
 
 <div
 	class="origin"
-	style:transform="rotateZ({angle}deg) translateX({offset}vmin)"
+	style:transform="rotateZ({angle}deg) translateY(-{offset}vmin)"
 >
 	<div
 		class="ball"

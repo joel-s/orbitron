@@ -5,7 +5,6 @@
 
 	let { moonSpecs, index }: { moonSpecs: MoonSpec[], index: number } = $props();
 
-	console.log(moonSpecs, index);
 	const { count, offset, size, color } = moonSpecs[index];
 	const angle = 360 / count;
 	let iVals = [...Array(count).keys()];
@@ -16,7 +15,7 @@
         width: 0;
         height: 0;
         position: absolute;
-        animation: rotateAnimation 10s linear infinite;
+        animation: rotateAnimation 30s linear infinite;
     }
 
     .circle {
