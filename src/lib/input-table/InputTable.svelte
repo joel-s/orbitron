@@ -4,12 +4,14 @@
   import { moonState } from '$lib/moonState.svelte.js';
 </script>
 
+<!--{JSON.stringify(moonState)}-->
 <table>
   <thead>
     <tr>
       <th></th>
       <th>Count</th>
       <th>Offset</th>
+      <th>Speed</th>
       <th>Size</th>
       <th>Color</th>
     </tr>
@@ -20,6 +22,7 @@
         <th>{i + 1}</th>
         <td><NumericInput bind:value={moon.count} /></td>
         <td><NumericInput bind:value={moon.offset} /></td>
+        <td><NumericInput bind:value={moon.speed} /></td>
         <td><NumericInput bind:value={moon.size} /></td>
         <td><ColorInput /></td>
       </tr>

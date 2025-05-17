@@ -3,4 +3,14 @@
 
 body {
   background: #000;
+  overflow: hidden;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
