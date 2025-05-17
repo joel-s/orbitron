@@ -1,19 +1,19 @@
 <script lang="ts">
   import '../app.css';
-  import type { MoonSpec } from '$lib/MoonSpec';
   import Moon from '$lib/Moon.svelte';
+  import { moonState } from '$lib/moonState.svelte';
 
-  let { moonSpecs, index }: { moonSpecs: MoonSpec[]; index: number } = $props();
+  let { index }: { index: number } = $props();
 
-  const { count, offset, size, color } = moonSpecs[index];
-  const angle = 360 / count;
-  let iVals = [...Array(count).keys()];
+  const { count, offset, size, color } = $derived(moonState[index]);
+  const angle = $derived(360 / count);
+  let iVals = $derived([...Array(count).keys()]);
 </script>
 
 <div class="center">
   <div class="circle" style:width="{2 * offset}vmin" style:height="{2 * offset}vmin"></div>
   {#each iVals as iVal (iVal)}
-    <Moon {moonSpecs} {index} {offset} angle={angle * iVal} {size} {color} />
+    <Moon {index} {offset} angle={angle * iVal} {size} {color} />
   {/each}
 </div>
 

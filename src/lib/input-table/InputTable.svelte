@@ -1,38 +1,29 @@
 <script>
   import NumericInput from '$lib/input-table/NumericInput.svelte';
+  import ColorInput from '$lib/input-table/ColorInput.svelte';
+  import { moonState } from '$lib/moonState.svelte.js';
 </script>
 
 <table>
   <thead>
     <tr>
-      <th>Orbit</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
+      <th></th>
+      <th>Count</th>
+      <th>Offset</th>
+      <th>Size</th>
+      <th>Color</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Radius</td>
-      <td><NumericInput /></td>
-      <td><NumericInput /></td>
-      <td><NumericInput /></td>
-    </tr>
-    <tr>
-      <td>Moons</td>
-      <td><NumericInput /></td>
-      <td><NumericInput /></td>
-      <td><NumericInput /></td>
-    </tr>
-    <tr>
-      <td>Size</td>
-      <td><NumericInput /></td>
-      <td><NumericInput /></td>
-      <td><NumericInput /></td>
-    </tr>
-    <tr>
-      <td>Color</td>
-    </tr>
+    {#each moonState as moon, i (i)}
+      <tr>
+        <th>{i + 1}</th>
+        <td><NumericInput bind:value={moon.count} /></td>
+        <td><NumericInput bind:value={moon.offset} /></td>
+        <td><NumericInput bind:value={moon.size} /></td>
+        <td><ColorInput /></td>
+      </tr>
+    {/each}
   </tbody>
 </table>
 

@@ -1,8 +1,9 @@
 <script lang="ts">
   import '../app.css';
   import Moons from '$lib/Moons.svelte';
+  import { moonState } from '$lib/moonState.svelte';
 
-  let { moonSpecs, index, angle, offset, size, color } = $props();
+  let { index, angle, offset, size, color } = $props();
 </script>
 
 <div class="origin" style:transform="rotateZ({angle}deg) translateY(-{offset}vmin)">
@@ -12,8 +13,8 @@
     style:height="{size}vmin"
     style:background-color={color}
   >
-    {#if index < moonSpecs.length - 1}
-      <Moons {moonSpecs} index={index + 1} />
+    {#if index < moonState.length - 1}
+      <Moons {moonState} index={index + 1} />
     {/if}
   </div>
 </div>
