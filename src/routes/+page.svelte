@@ -1,10 +1,16 @@
 <script lang="ts">
   import Moons from '$lib/Moons.svelte';
   import InputTable from '$lib/input-table/InputTable.svelte';
+  import SiteName from '$lib/SiteName.svelte';
 </script>
 
 <div class="page">
-  <div class="overlay">
+  <div class="name">
+    <h1>
+      <SiteName />
+    </h1>
+  </div>
+  <div class="inputTable">
     <InputTable />
   </div>
   <Moons index={0} />
@@ -20,9 +26,21 @@
     align-items: center;
   }
 
-  .overlay {
+  .name {
     position: absolute;
     top: 4rem;
+    left: 4rem;
+    width: fit-content;
+
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 0.2em;
+    }
+  }
+
+  .inputTable {
+    position: absolute;
+    bottom: 4rem;
     left: 4rem;
     width: fit-content;
   }

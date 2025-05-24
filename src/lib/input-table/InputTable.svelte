@@ -10,7 +10,7 @@
     <tr>
       <th></th>
       <th>Count</th>
-      <th>Offset</th>
+      <th>Delta</th>
       <th>Speed</th>
       <th>Size</th>
       <th>Color</th>

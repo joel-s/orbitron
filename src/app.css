@@ -1,8 +1,24 @@
 @import 'tailwindcss';
 @plugin "daisyui";
 
-body {
+:root {
+  --retro0: #001219;
+  --retro1: #005f73;
+  --retro2: #0a9396;
+  --retro3: #94d2bd;
+  --retro4: #e9d8a6;
+  --retro5: #ee9b00;
+  --retro6: #ca6702;
+  --retro7: #bb3e03;
+  --retro8: #ae2012;
+  --retro9: #9b2226;
+
   background: #000;
+  font-family: 'Chintzy CPU (BRK)', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+body {
   overflow: hidden;
 }
 
