@@ -36,6 +36,7 @@
   }
   th,
   td {
+    color: var(--retro4);
     padding: 0.3rem 0.3rem;
   }
 </style>
