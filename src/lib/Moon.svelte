@@ -12,11 +12,10 @@
     style:width="{size}vmin"
     style:height="{size}vmin"
     style:background-color={color}
-  >
-    {#if index < moonState.length - 1}
-      <Moons {moonState} index={index + 1} />
-    {/if}
-  </div>
+  ></div>
+  {#if index < moonState.length - 1}
+    <Moons index={index + 1} />
+  {/if}
 </div>
 
 <style>
@@ -29,6 +28,6 @@
   .ball {
     position: absolute;
     border-radius: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%, -50%);
   }
 </style>

@@ -27,7 +27,7 @@
   .circle {
     position: absolute;
     border-radius: 50%;
-    /*border: 1px solid blue;*/
+    /* border: 1px solid var(--retro9); */
     transform: translate(-50%, -50%);
   }
 </style>

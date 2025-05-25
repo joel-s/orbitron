@@ -1,3 +1,27 @@
+# Orbitron
+
+## To run dev server
+
+```bash
+bun run dev
+```
+
+## To do
+
+- Support "presets"
+  - Saving presets
+  - Support Joel's
+  - Support browser-local
+- Color moons randomly/sequentially somehow
+- Support color numbers
+- Switches
+  - Orbit circles (retro9)
+  - Square/round moons
+- Transition on some properties?
+- Support negative speeds?
+- Support a variable number of levels
+
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
