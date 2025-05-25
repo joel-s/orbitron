@@ -3,5 +3,5 @@ export interface MoonSpec {
   offset: number;
   speed: number;
   size: number;
-  color?: string;
+  color: number;
 }

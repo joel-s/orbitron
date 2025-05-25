@@ -13,7 +13,7 @@
   --retro8: #ae2012;
   --retro9: #9b2226;
 
-  background: #000;
+  background: var(--retro0);
   font-family: 'Chintzy CPU (BRK)', sans-serif;
   letter-spacing: 0.1em;
 }

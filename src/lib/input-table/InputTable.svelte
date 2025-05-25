@@ -10,7 +10,7 @@
     <tr>
       <th></th>
       <th>Count</th>
-      <th>Delta</th>
+      <th>Dist.</th>
       <th>Speed</th>
       <th>Size</th>
       <th>Color</th>
@@ -24,7 +24,7 @@
         <td><NumericInput bind:value={moon.offset} /></td>
         <td><NumericInput bind:value={moon.speed} /></td>
         <td><NumericInput bind:value={moon.size} /></td>
-        <td><ColorInput /></td>
+        <td><ColorInput bind:value={moon.color} /></td>
       </tr>
     {/each}
   </tbody>

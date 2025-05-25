@@ -8,18 +8,20 @@ bun run dev
 
 ## To do
 
-- Support "presets"
-  - Saving presets
-  - Support Joel's
-  - Support browser-local
-- Color moons randomly/sequentially somehow
-- Support color numbers
-- Switches
-  - Orbit circles (retro9)
-  - Square/round moons
-- Transition on some properties?
-- Support negative speeds?
-- Support a variable number of levels
+- [ ] Support color numbers
+- [ ] Size and Color properties for 0
+- [ ] Support "presets"
+  - [ ] Saving presets
+  - [ ] Support Joel's
+  - [ ] Support browser-local
+- [ ] Color moons randomly/sequentially somehow
+- [ ] Switches
+  - [ ] Orbit paths as circles (retro9)
+  - [ ] Vary colors
+  - [ ] Square/round moons
+- [ ] Transition on some properties?
+- [ ] Support negative speeds?
+- [ ] Support a variable number of levels
 
 
 # sv
