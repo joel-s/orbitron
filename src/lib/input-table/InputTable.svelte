@@ -19,7 +19,7 @@
   <tbody>
     {#each moonState as moon, i (i)}
       <tr>
-        <th>{i + 1}</th>
+        <th>{i}</th>
         <td><NumericInput bind:value={moon.count} /></td>
         <td><NumericInput bind:value={moon.offset} /></td>
         <td><NumericInput bind:value={moon.speed} /></td>
