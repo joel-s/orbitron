@@ -25,5 +25,35 @@ export const presets: MoonSpec[][] = [
     { count: 3, offset: 32, speed: 4, size: 6.4, color: 2 },
     { count: 3, offset: 8, speed: 4, size: 1.6, color: 3 },
     { count: 3, offset: 2, speed: 4, size: 0.4, color: 4 }
+  ],
+  [
+    {
+      count: 1,
+      offset: 0,
+      speed: 0,
+      size: 0,
+      color: 0
+    },
+    {
+      count: 3,
+      offset: 20,
+      speed: 4,
+      size: 0,
+      color: 0
+    },
+    {
+      count: 3,
+      offset: 20,
+      speed: 4,
+      size: 0,
+      color: 0
+    },
+    {
+      count: 3,
+      offset: 10,
+      speed: 4,
+      size: 5,
+      color: 4
+    }
   ]
 ];
