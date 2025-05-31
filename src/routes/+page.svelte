@@ -5,34 +5,47 @@
 </script>
 
 <div class="page">
-  <div class="name">
-    <h1>
-      <SiteName />
-    </h1>
+  <div class="control-panel">
+    <div class="name">
+      <h1>
+        <SiteName />
+      </h1>
+    </div>
+    <div class="inputTable">
+      <InputTable />
+    </div>
   </div>
-  <div class="inputTable">
-    <InputTable />
-  </div>
-  <div class="shift-right">
-    <Moons index={0} />
+
+  <div class="screen">
+    <div class="moons-origin">
+      <Moons index={0} />
+    </div>
   </div>
 </div>
 
 <style>
   .page {
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: 100vmin;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
   }
 
-  .name {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
+  .control-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
     width: fit-content;
+    overflow-y: auto;
+  }
+
+  .name {
+    width: fit-content;
+    text-align: center;
+    margin: 2rem auto;
 
     h1 {
       font-size: 4rem;
@@ -41,15 +54,17 @@
   }
 
   .inputTable {
-    position: absolute;
-    bottom: 4rem;
-    left: 4rem;
     width: fit-content;
   }
 
-  .shift-right {
-    position: absolute;
-    right: 0;
-    width: 60vh;
+  .screen {
+    width: min(60vw, 100vh);
+    height: 100vh;
+  }
+
+  .moons-origin {
+    width: 0;
+    height: 0;
+    margin: 50vh auto;
   }
 </style>

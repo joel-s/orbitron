@@ -10,7 +10,7 @@ bun run dev
 
 - [x] Support color numbers
 - [x] Size and Color properties for 0
-- [ ] Improve layout using flex
+- [x] Improve layout using flex
 - [x] Support "presets"
   - [x] Saving presets
   - [x] Support Joel's
