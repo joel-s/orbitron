@@ -9,11 +9,11 @@ export function getFirstDisabledRow(): number {
 export const presets: MoonSpec[][] = [
   [
     { count: 1, offset: 0, speed: 0, size: 0, color: 0 },
-    { count: 3, offset: 20, speed: 4, size: 0, color: 0 },
-    { count: 3, offset: 20, speed: 4, size: 0, color: 0 },
-    { count: 3, offset: 10, speed: 4, size: 0, color: 4 },
-    { count: 3, offset: 10, speed: 4, size: 5, color: 4 },
-    { count: 0, offset: 10, speed: 4, size: 0, color: 0 },
+    { count: 3, offset: 16, speed: 4, size: 0, color: 0 },
+    { count: 3, offset: 16, speed: 4, size: 0, color: 0 },
+    { count: 3, offset: 8, speed: 4, size: 0, color: 4 },
+    { count: 3, offset: 8, speed: 4, size: 5, color: 4 },
+    { count: 0, offset: 8, speed: 4, size: 0, color: 0 },
   ],
   [
     { count: 1, offset: 0, speed: 0, size: 0, color: 0 },

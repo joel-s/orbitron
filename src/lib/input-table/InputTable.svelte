@@ -5,6 +5,7 @@
   import { switches } from '$lib/switchValues.svelte.js';
   import PresetInput from '$lib/input-table/PresetInput.svelte';
   import CopyToClipboard from '$lib/input-table/CopyToClipboard.svelte';
+  import RestartButton from '$lib/input-table/RestartButton.svelte';
 
   let firstDisabledRow = $derived(getFirstDisabledRow());
 </script>
@@ -50,7 +51,7 @@
       <tr>
         <th></th>
         <th class="preset">Preset</th>
-        <th></th>
+        <th class="restart">Restart</th>
         <th class="toggle-text">A</th>
         <th class="toggle-text">B</th>
         <th class="copy-button">Copy</th>
@@ -62,7 +63,9 @@
         <td class="preset">
           <PresetInput />
         </td>
-        <td></td>
+        <td class="restart">
+          <RestartButton />
+        </td>
         <td>
           <input type="checkbox" bind:checked={switches.revealWheels} class="toggle" />
         </td>
@@ -93,12 +96,16 @@
     color: var(--retro5);
   }
 
-  .toggle,
-  .toggle-text {
+  .restart {
     color: var(--retro6);
   }
 
-  .copy-button {
+  .toggle,
+  .toggle-text {
     color: var(--retro7);
+  }
+
+  .copy-button {
+    color: var(--retro8);
   }
 </style>
