@@ -13,7 +13,9 @@
   <div class="inputTable">
     <InputTable />
   </div>
-  <Moons index={0} />
+  <div class="shift-right">
+    <Moons index={0} />
+  </div>
 </div>
 
 <style>
@@ -43,5 +45,11 @@
     bottom: 4rem;
     left: 4rem;
     width: fit-content;
+  }
+
+  .shift-right {
+    position: absolute;
+    right: 0;
+    width: 60vh;
   }
 </style>
