@@ -10,21 +10,19 @@ bun run dev
 
 - [x] Support color numbers
 - [x] Size and Color properties for 0
-- [ ] Support "presets"
+- [ ] Improve layout using flex
+- [x] Support "presets"
   - [x] Saving presets
-  - [ ] Support Joel's
+  - [x] Support Joel's
   - [ ] Support browser-local
 - [ ] Color moons randomly/sequentially somehow
-- [ ] Switches
-  - [ ] Orbit paths as circles (retro9)
+- [x] Switches
+  - [x] Orbit paths as circles (retro9)
+  - [x] Orbit spokes
   - [ ] Vary colors
 - [ ] Transition on some properties?
 - [ ] Support negative speeds?
 - [x] Support a variable number of levels
-
-Variable levels
-How do we keep track of which are enabled?
-Get the first 0 using $derived
 
 # sv
 
