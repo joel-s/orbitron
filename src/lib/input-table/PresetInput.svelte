@@ -14,7 +14,7 @@
 
 <input
   type="number"
-  class="input w-14"
+  class="input w-18"
   oninput={handleInputChange}
   min="0"
   max={presets.length - 1}
