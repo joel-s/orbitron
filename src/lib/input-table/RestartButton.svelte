@@ -1,19 +1,8 @@
 <script lang="ts">
-  const replayAnimations = () => {
-    document.getAnimations().forEach((anim) => {
-      anim.cancel();
-      anim.play();
-    });
-  };
+  import { restartAnimations } from '$lib/animation';
 </script>
 
-<button
-  type="button"
-  onclick={replayAnimations}
-  class="btn btn-square copy-button"
-  style:color="inherit"
-  aria-label="Copy to clipboard"
->
+<button type="button" onclick={restartAnimations} class="btn w-18" style:color="inherit" aria-label="Copy to clipboard">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"

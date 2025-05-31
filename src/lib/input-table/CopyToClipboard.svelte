@@ -8,13 +8,7 @@
   }
 </script>
 
-<button
-  type="button"
-  onclick={copyToClipboard}
-  class="btn btn-square copy-button"
-  style:color="inherit"
-  aria-label="Copy to clipboard"
->
+<button type="button" onclick={copyToClipboard} class="btn w-18" style:color="inherit" aria-label="Copy to clipboard">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
     <path
       fill="none"

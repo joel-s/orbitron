@@ -1,5 +1,6 @@
 <script lang="ts">
   import { moonState, presets } from '$lib/moonState.svelte';
+  import { restartAnimations } from '$lib/animation';
 
   function handleInputChange(event: Event) {
     const inputElement = event.target as HTMLInputElement;
@@ -9,11 +10,13 @@
         theArray[index] = presets[presetNum][index];
       });
     }
+    restartAnimations();
   }
 </script>
 
 <input
   type="number"
+  name="global-preset"
   class="input w-18"
   oninput={handleInputChange}
   min="0"

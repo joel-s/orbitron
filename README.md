@@ -15,6 +15,7 @@ bun run dev
   - [x] Saving presets
   - [x] Support Joel's
   - [ ] Support browser-local
+- [ ] Synchronize animations
 - [ ] Color moons randomly/sequentially somehow
 - [x] Switches
   - [x] Orbit paths as circles (retro9)
@@ -23,6 +24,7 @@ bun run dev
 - [ ] Transition on some properties?
 - [ ] Support negative speeds?
 - [x] Support a variable number of levels
+- [ ] Makrina: Add screenshot(s) to blog
 
 # sv
 

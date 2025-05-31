@@ -27,19 +27,19 @@
         <tr>
           <th>{i}</th>
           <td>
-            <NumericInput bind:value={moon.count} disabled={!i} />
+            <NumericInput level={i} name="count" bind:value={moon.count} isCount disabled={!i} />
           </td>
           <td>
-            <NumericInput bind:value={moon.offset} disabled={!i || i >= firstDisabledRow} />
+            <NumericInput level={i} name="offset" bind:value={moon.offset} disabled={!i || i >= firstDisabledRow} />
           </td>
           <td>
-            <NumericInput bind:value={moon.speed} disabled={!i || i >= firstDisabledRow} />
+            <NumericInput level={i} name="speed" bind:value={moon.speed} disabled={!i || i >= firstDisabledRow} />
           </td>
           <td>
-            <NumericInput bind:value={moon.size} disabled={i >= firstDisabledRow} />
+            <NumericInput level={i} name="size" bind:value={moon.size} disabled={i >= firstDisabledRow} />
           </td>
           <td>
-            <ColorInput bind:value={moon.color} disabled={i >= firstDisabledRow} />
+            <ColorInput level={i} bind:value={moon.color} disabled={i >= firstDisabledRow} />
           </td>
         </tr>
       {/each}
@@ -67,10 +67,10 @@
           <RestartButton />
         </td>
         <td>
-          <input type="checkbox" bind:checked={switches.revealWheels} class="toggle" />
+          <input type="checkbox" name="toggle-a" bind:checked={switches.revealWheels} class="toggle" />
         </td>
         <td>
-          <input type="checkbox" bind:checked={switches.revealSpokes} class="toggle" />
+          <input type="checkbox" name="toggle-b" bind:checked={switches.revealSpokes} class="toggle" />
         </td>
         <td class="copy-button">
           <CopyToClipboard />

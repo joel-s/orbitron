@@ -42,6 +42,7 @@
 
   .line {
     position: absolute;
+    left: -0.5px;
     bottom: 0;
     width: 1px;
     background-color: var(--retro8);

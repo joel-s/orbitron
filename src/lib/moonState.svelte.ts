@@ -55,6 +55,30 @@ export const presets: MoonSpec[][] = [
     { count: 0, offset: 0, speed: 0, size: 0, color: 0 },
     { count: 0, offset: 0, speed: 0, size: 0, color: 0 },
   ],
+  [
+    { count: 1, offset: 0, speed: 0, size: 0, color: 0 },
+    { count: 4, offset: 16, speed: 4, size: 0, color: 0 },
+    { count: 4, offset: 16, speed: 4, size: 0, color: 0 },
+    { count: 4, offset: 16, speed: 4, size: 5, color: 4 },
+    { count: 0, offset: 0, speed: 0, size: 0, color: 0 },
+    { count: 0, offset: 0, speed: 0, size: 0, color: 0 },
+  ],
+  [
+    { count: 1, offset: 0, speed: 0, size: 0, color: 0 },
+    { count: 4, offset: 16, speed: 2, size: 0, color: 0 },
+    { count: 4, offset: 16, speed: 4, size: 0, color: 0 },
+    { count: 4, offset: 4, speed: 8, size: 0, color: 0 },
+    { count: 4, offset: 4, speed: 16, size: 2, color: 4 },
+    { count: 0, offset: 0, speed: 0, size: 0, color: 0 },
+  ],
+  [
+    { count: 1, offset: 0, speed: 0, size: 0, color: 0 },
+    { count: 6, offset: 20, speed: 4, size: 0, color: 0 },
+    { count: 3, offset: 20, speed: 4, size: 0, color: 0 },
+    { count: 6, offset: 10, speed: 4, size: 6, color: 3 },
+    { count: 0, offset: 0, speed: 0, size: 0, color: 0 },
+    { count: 0, offset: 0, speed: 0, size: 0, color: 0 },
+  ],
 ];
 
 export const moonState = $state<MoonSpec[]>(presets[0]);
