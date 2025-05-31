@@ -2,15 +2,23 @@
   import NumericInput from '$lib/input-table/NumericInput.svelte';
   import ColorInput from '$lib/input-table/ColorInput.svelte';
   import { getFirstDisabledRow, moonState } from '$lib/moonState.svelte.js';
+  import { switches } from '$lib/switchValues.svelte.js';
 
   function copyToClipboard() {
     navigator.clipboard.writeText(JSON.stringify(moonState)).catch((err) => {
-      console.error('Async: Could not copy text: ', err);
+      console.error('Could not copy text: ', err);
     });
   }
 
-  const firstDisabledRow = $derived(getFirstDisabledRow());
+  let firstDisabledRow = $derived(getFirstDisabledRow());
 </script>
+
+<div class="switches">
+  <label class="label">
+    <input type="checkbox" bind:checked={switches.revealWheels} class="toggle" />
+    <!--Reveal-->
+  </label>
+</div>
 
 <div class="flex flex-row items-end">
   <table>
@@ -51,7 +59,7 @@
   <button
     type="button"
     onclick={copyToClipboard}
-    class="btn btn-square move-up mx-4"
+    class="btn btn-square copy-button mx-4"
     aria-label="Copy to clipboard"
   >
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -68,6 +76,15 @@
 </div>
 
 <style>
+  .switches {
+    margin: 1.7rem;
+  }
+
+  label,
+  .toggle {
+    color: var(--retro2);
+  }
+
   table {
     padding: 1rem;
   }
@@ -78,7 +95,7 @@
     padding: 0.3rem 0.3rem;
   }
 
-  .move-up {
+  .copy-button {
     padding: 1px;
     margin-bottom: 5.5px;
   }
