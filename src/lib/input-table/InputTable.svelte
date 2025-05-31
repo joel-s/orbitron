@@ -22,11 +22,23 @@
 </div>
 
 <table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Preset</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <th>Preset</th>
+      <th>&nbsp;</th>
       <td>
         <PresetInput />
+      </td>
+      <td>
+        <input type="checkbox" bind:checked={switches.revealWheels} class="toggle" />
+      </td>
+      <td>
+        <input type="checkbox" bind:checked={switches.revealSpokes} class="toggle" />
       </td>
     </tr>
   </tbody>

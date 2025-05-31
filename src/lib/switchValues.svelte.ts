@@ -1,1 +1,1 @@
-export let switches = $state({ revealWheels: false });
+export const switches = $state({ revealWheels: false, revealSpokes: false });

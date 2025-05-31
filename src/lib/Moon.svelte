@@ -15,19 +15,14 @@
     '#ca6702',
     '#bb3e03',
     '#ae2012',
-    '#9b2226'
+    '#9b2226',
   ];
 
   const colorName = $derived(colors[color]);
 </script>
 
 <div class="origin" style:transform="rotateZ({angle}deg) translateY(-{offset}vmin)">
-  <div
-    class="ball"
-    style:width="{size}vmin"
-    style:height="{size}vmin"
-    style:background-color={colorName}
-  ></div>
+  <div class="ball" style:width="{size}vmin" style:height="{size}vmin" style:background-color={colorName}></div>
   {#if index < moonState.length - 1}
     <Moons index={index + 1} />
   {/if}
