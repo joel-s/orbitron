@@ -3,6 +3,7 @@
   import ColorInput from '$lib/input-table/ColorInput.svelte';
   import { getFirstDisabledRow, moonState } from '$lib/moonState.svelte.js';
   import { switches } from '$lib/switchValues.svelte.js';
+  import PresetInput from '$lib/input-table/PresetInput.svelte';
 
   function copyToClipboard() {
     navigator.clipboard.writeText(JSON.stringify(moonState)).catch((err) => {
@@ -19,6 +20,17 @@
     <!--Reveal-->
   </label>
 </div>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Preset</th>
+      <td>
+        <PresetInput />
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="flex flex-row items-end">
   <table>
