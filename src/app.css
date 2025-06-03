@@ -1,5 +1,7 @@
 @import 'tailwindcss';
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: dark --default;
+}
 
 :root {
   --retro0: #001219;
@@ -13,13 +15,17 @@
   --retro8: #ae2012;
   --retro9: #9b2226;
 
-  background: var(--retro0);
+  background: black;
   font-family: 'Chintzy CPU (BRK)', sans-serif;
   letter-spacing: 0.1em;
 }
 
 body {
   overflow: hidden;
+}
+
+input {
+  background-color: var(--retro0);
 }
 
 @keyframes rotateAnimation {

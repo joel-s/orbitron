@@ -40,6 +40,7 @@
     justify-content: space-evenly;
     width: fit-content;
     overflow-y: auto;
+    flex-shrink: 0;
   }
 
   .name {
@@ -60,6 +61,7 @@
   .screen {
     width: min(60vw, 100vh);
     height: 100vh;
+    z-index: -999;
   }
 
   .moons-origin {
