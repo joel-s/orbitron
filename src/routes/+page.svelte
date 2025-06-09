@@ -5,14 +5,16 @@
 </script>
 
 <div class="page">
-  <div class="control-panel">
-    <div class="name">
-      <h1>
-        <SiteName />
-      </h1>
-    </div>
-    <div class="inputTable">
-      <InputTable />
+  <div class="control-panel-container">
+    <div class="control-panel">
+      <div class="name">
+        <h1>
+          <SiteName />
+        </h1>
+      </div>
+      <div class="inputTable">
+        <InputTable />
+      </div>
     </div>
   </div>
 
@@ -33,14 +35,20 @@
     align-items: center;
   }
 
+  .control-panel-container {
+    width: fit-content;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
   .control-panel {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-evenly;
     width: fit-content;
-    overflow-y: auto;
     flex-shrink: 0;
+    padding: 1rem 4rem 2rem 0;
   }
 
   .name {

@@ -67,13 +67,41 @@
           <RestartButton />
         </td>
         <td>
-          <input type="checkbox" name="toggle-a" bind:checked={switches.revealWheels} class="toggle" />
+          <input type="checkbox" name="toggle-a" bind:checked={switches.revealWheels} class="toggle toggle-color" />
         </td>
         <td>
-          <input type="checkbox" name="toggle-b" bind:checked={switches.revealSpokes} class="toggle" />
+          <input type="checkbox" name="toggle-b" bind:checked={switches.revealSpokes} class="toggle toggle-color" />
         </td>
         <td class="copy-button">
           <CopyToClipboard />
+        </td>
+      </tr>
+    </tbody>
+    <thead>
+      <tr>
+        <th>&nbsp;</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th class="preset">Auto</th>
+        <th class="toggle-color" colspan="4">Ratio Exponent</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>&nbsp;</th>
+        <td class="preset">
+          <input type="checkbox" name="toggle-c" bind:checked={switches.exponential} class="toggle preset" />
+        </td>
+        <td colspan="4" class="toggle-color">
+          <input type="range" min="-4" max="4" value="0" class="range" step="0.01" />
+          <div class="mt-2 flex justify-between px-2.5 text-xs">
+            <span>-4</span>
+            <span>-2</span>
+            <span>0</span>
+            <span>&nbsp;2</span>
+            <span>&nbsp;4</span>
+          </div>
         </td>
       </tr>
     </tbody>
@@ -100,7 +128,7 @@
     color: var(--retro6);
   }
 
-  .toggle,
+  .toggle-color,
   .toggle-text {
     color: var(--retro7);
   }
