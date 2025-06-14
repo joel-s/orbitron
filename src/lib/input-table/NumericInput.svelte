@@ -7,4 +7,4 @@
   }: { level: number; name: string; value: number; disabled?: boolean } = $props();
 </script>
 
-<input type="number" name="level-{level}-{name}" class="input w-18" bind:value {disabled} />
+<input type="number" name="level-{level}-{name}" class="input w-18" bind:value {disabled} min="0" />

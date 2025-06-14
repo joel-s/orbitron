@@ -6,6 +6,7 @@
   import PresetInput from '$lib/input-table/PresetInput.svelte';
   import CopyToClipboard from '$lib/input-table/CopyToClipboard.svelte';
   import RestartButton from '$lib/input-table/RestartButton.svelte';
+  import ExponentSlider from '$lib/input-table/ExponentSlider.svelte';
 
   let firstDisabledRow = $derived(getFirstDisabledRow());
 </script>
@@ -92,16 +93,17 @@
         <th>&nbsp;</th>
         <td class="preset">
           <input type="checkbox" name="toggle-c" bind:checked={switches.exponential} class="toggle preset" />
+          <!--          <div class="mt-2 flex justify-between px-2.5 text-xs text-transparent">0</div>-->
         </td>
         <td colspan="4" class="toggle-color">
-          <input type="range" min="-4" max="4" value="0" class="range" step="0.01" />
-          <div class="mt-2 flex justify-between px-2.5 text-xs">
-            <span>-4</span>
-            <span>-2</span>
-            <span>0</span>
-            <span>&nbsp;2</span>
-            <span>&nbsp;4</span>
-          </div>
+          <ExponentSlider />
+          <!--          <div class="mt-2 flex justify-between px-2.5 text-xs">-->
+          <!--            <span>-4</span>-->
+          <!--            <span>-2</span>-->
+          <!--            <span>0</span>-->
+          <!--            <span>&nbsp;2</span>-->
+          <!--            <span>&nbsp;4</span>-->
+          <!--          </div>-->
         </td>
       </tr>
     </tbody>

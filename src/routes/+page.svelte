@@ -48,7 +48,7 @@
     justify-content: space-evenly;
     width: fit-content;
     flex-shrink: 0;
-    padding: 1rem 4rem 2rem 0;
+    padding: 1rem 4rem 4rem 0;
   }
 
   .name {

@@ -24,8 +24,8 @@
 </script>
 
 <div class="origin" style:transform="rotateZ({angle}deg)">
-  <div class="line" style="height: {offset}vmin; background: {lineBackground}"></div>
-  <div class="offset" style:transform="translateY(-{offset}vmin)">
+  <div class="line" style="height: {offset / 2}vmin; background: {lineBackground}"></div>
+  <div class="offset" style:transform="translateY(-{offset / 2}vmin)">
     <div class="ball" style:width="{size}vmin" style:height="{size}vmin" style:background-color={colorName}></div>
     {#if index < moonState.length - 1}
       <Moons index={index + 1} />

@@ -6,25 +6,32 @@
 bun run dev
 ```
 
-## To do
+## To do: Fixes
+
+- [ ] Double or halve offsets
+- [ ] Add Ben's ideas (from email?)
+- [ ] Remove extra circle
+- [ ] In auto mode, recalc on count changing to/from 0
+
+## To do: Improvements
 
 - [x] Support color numbers
 - [x] Size and Color properties for 0
 - [x] Improve layout using flex
+- [x] Support a variable number of levels
 - [x] Support "presets"
   - [x] Saving presets
   - [x] Support Joel's
   - [ ] Support browser-local
-- [ ] Synchronize animations
-- [ ] Color moons randomly/sequentially somehow
+- [x] Synchronize animations
 - [x] Switches
   - [x] Orbit paths as circles (retro9)
   - [x] Orbit spokes
   - [ ] Vary colors
 - [ ] Transition on some properties?
-- [ ] Support negative speeds?
-- [x] Support a variable number of levels
+- [ ] Support negative speeds (etc.)?
 - [ ] Makrina: Add screenshot(s) to blog
+- [ ] Color moons randomly/sequentially somehow
 
 # sv
 
