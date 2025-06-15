@@ -2,7 +2,7 @@
   import { switches } from '$lib/switchValues.svelte.js';
   import { getFirstDisabledRow, moonState } from '$lib/moonState.svelte.js';
 
-  function getdist(r0: number, n: number, kMin: number, kMax: number) {
+  function getDist(r0: number, n: number, kMin: number, kMax: number) {
     let sum = n ** (kMin - 1);
     for (let k = kMin; k < kMax; k++) {
       sum += 2 ** (k - kMin) * n ** k;
@@ -20,7 +20,7 @@
       if (index < firstDisabledRow) {
         state.size = r0 * n ** index;
         if (index > 0) {
-          state.dist = getdist(r0, n, index, firstDisabledRow);
+          state.dist = getDist(r0, n, index, firstDisabledRow);
         }
       }
     });

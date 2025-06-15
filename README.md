@@ -8,7 +8,7 @@ bun run dev
 
 ## To do: Fixes
 
-- [ ] Double or halve dists
+- [x] Double or halve distances
 - [x] Remove extra circle
 - [ ] In auto mode, recalc on count changing to/from 0
 
