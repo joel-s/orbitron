@@ -23,7 +23,9 @@
 </script>
 
 <div class="center" id="rotate-level-{index}" style="animation: rotateAnimation {120 / speed}s linear infinite">
-  <div class="circle" style="width: {offset}vmin; height: {offset}vmin; border: {circleBorder};"></div>
+  {#if iVals.length}
+    <div class="circle" style="width: {offset}vmin; height: {offset}vmin; border: {circleBorder};"></div>
+  {/if}
   {#each iVals as iVal (iVal)}
     <Moon {index} {offset} angle={angle * iVal} {size} {color} />
   {/each}

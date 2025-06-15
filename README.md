@@ -9,11 +9,10 @@ bun run dev
 ## To do: Fixes
 
 - [ ] Double or halve offsets
-- [ ] Add Ben's ideas (from email?)
-- [ ] Remove extra circle
+- [x] Remove extra circle
 - [ ] In auto mode, recalc on count changing to/from 0
 
-## To do: Improvements
+## To do: Joel's improvement ideas
 
 - [x] Support color numbers
 - [x] Size and Color properties for 0
@@ -30,8 +29,11 @@ bun run dev
   - [ ] Vary colors
 - [ ] Transition on some properties?
 - [ ] Support negative speeds (etc.)?
+
 - [ ] Makrina: Add screenshot(s) to blog
-- [ ] Color moons randomly/sequentially somehow
+- [ ] Ben: Opacity on colors
+- [ ] Ben: Different color schemes
+- [ ] Ben: Diffused/fading circles
 
 # sv
 
