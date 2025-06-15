@@ -4,7 +4,7 @@
   import { moonState } from '$lib/moonState.svelte';
   import { switches } from '$lib/switchValues.svelte';
 
-  let { index, angle, offset, size, color } = $props();
+  let { index, angle, dist, size, color } = $props();
 
   const colors = [
     '#001219',
@@ -20,12 +20,12 @@
   ];
 
   const colorName = $derived(colors[color]);
-  const lineBackground = $derived(switches.revealSpokes && offset > 0 ? 'var(--retro6)' : 'none');
+  const lineBackground = $derived(switches.revealSpokes && dist > 0 ? 'var(--retro6)' : 'none');
 </script>
 
 <div class="origin" style:transform="rotateZ({angle}deg)">
-  <div class="line" style="height: {offset / 2}vmin; background: {lineBackground}"></div>
-  <div class="offset" style:transform="translateY(-{offset / 2}vmin)">
+  <div class="line" style="height: {dist / 2}vmin; background: {lineBackground}"></div>
+  <div class="dist" style:transform="translateY(-{dist / 2}vmin)">
     <div class="ball" style:width="{size}vmin" style:height="{size}vmin" style:background-color={colorName}></div>
     {#if index < moonState.length - 1}
       <Moons index={index + 1} />

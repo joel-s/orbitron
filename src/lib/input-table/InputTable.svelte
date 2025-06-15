@@ -31,7 +31,7 @@
             <NumericInput level={i} name="count" bind:value={moon.count} isCount disabled={!i} />
           </td>
           <td>
-            <NumericInput level={i} name="offset" bind:value={moon.offset} disabled={!i || i >= firstDisabledRow} />
+            <NumericInput level={i} name="dist" bind:value={moon.dist} disabled={!i || i >= firstDisabledRow} />
           </td>
           <td>
             <NumericInput level={i} name="speed" bind:value={moon.speed} disabled={!i || i >= firstDisabledRow} />

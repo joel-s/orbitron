@@ -1,6 +1,6 @@
 export interface MoonSpec {
   count: number;
-  offset: number;
+  dist: number;
   speed: number;
   size: number;
   color: number;

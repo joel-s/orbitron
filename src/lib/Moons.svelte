@@ -6,10 +6,10 @@
 
   let { index }: { index: number } = $props();
 
-  const { count, offset, speed, size, color } = $derived(moonState[index]);
+  const { count, dist, speed, size, color } = $derived(moonState[index]);
   const angle = $derived(360 / count);
   let iVals = $derived([...Array(count).keys()]);
-  let circleBorder = $derived(switches.revealWheels && offset > 0 ? '1px solid var(--retro9)' : 'none');
+  let circleBorder = $derived(switches.revealWheels && dist > 0 ? '1px solid var(--retro9)' : 'none');
 
   $effect(() => {
     const centralAnim = document.querySelector('#rotate-level-1')?.getAnimations()?.[0];
@@ -24,10 +24,10 @@
 
 <div class="center" id="rotate-level-{index}" style="animation: rotateAnimation {120 / speed}s linear infinite">
   {#if iVals.length}
-    <div class="circle" style="width: {offset}vmin; height: {offset}vmin; border: {circleBorder};"></div>
+    <div class="circle" style="width: {dist}vmin; height: {dist}vmin; border: {circleBorder};"></div>
   {/if}
   {#each iVals as iVal (iVal)}
-    <Moon {index} {offset} angle={angle * iVal} {size} {color} />
+    <Moon {index} {dist} angle={angle * iVal} {size} {color} />
   {/each}
 </div>
 
