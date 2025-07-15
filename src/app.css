@@ -15,6 +15,8 @@
   --retro8: #ae2012;
   --retro9: #9b2226;
 
+  --color-neutral-content: var(--retro4);
+
   background: black;
   font-family: 'Chintzy CPU (BRK)', sans-serif;
   letter-spacing: 0.1em;

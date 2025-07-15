@@ -28,7 +28,7 @@
         <tr>
           <th>{i}</th>
           <td>
-            <NumericInput level={i} name="count" bind:value={moon.count} isCount disabled={!i} />
+            <NumericInput level={i} name="count" bind:value={moon.count} disabled={!i} />
           </td>
           <td>
             <NumericInput level={i} name="dist" bind:value={moon.dist} disabled={!i || i >= firstDisabledRow} />
@@ -74,7 +74,9 @@
           <input type="checkbox" name="toggle-b" bind:checked={switches.revealSpokes} class="toggle toggle-color" />
         </td>
         <td class="copy-button">
-          <CopyToClipboard />
+          <div class="tooltip tooltip-bottom" data-tip="Copy table to clipboard">
+            <CopyToClipboard />
+          </div>
         </td>
       </tr>
     </tbody>
