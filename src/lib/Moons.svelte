@@ -22,7 +22,11 @@
   });
 </script>
 
-<div class="center" id="rotate-level-{index}" style="animation: rotateAnimation {120 / speed}s linear infinite">
+<div
+  class="center"
+  id="rotate-level-{index}"
+  style="animation: rotateAnimation {speed ? 120 / speed : 0}s linear infinite"
+>
   {#if iVals.length}
     <div class="circle" style="width: {dist}vmin; height: {dist}vmin; border: {circleBorder};"></div>
   {/if}
