@@ -89,11 +89,21 @@ export const presets: MoonSpec[][] = [
     { count: 0, dist: 16, speed: 4, size: 0, color: 0 },
   ],
   [
+    // From Ben
     { count: 1, dist: 0, speed: 0, size: 0, color: 0 },
     { count: 3, dist: 52, speed: 4, size: 0, color: 0 },
     { count: 9, dist: 24, speed: 4, size: 0, color: 0 },
     { count: 1, dist: 16, speed: 4, size: 0, color: 4 },
     { count: 1, dist: 16, speed: 4, size: 5, color: 4 },
+    { count: 0, dist: 16, speed: 4, size: 0, color: 0 },
+  ],
+  [
+    // From Dad
+    { count: 1, dist: 0, speed: 0, size: 0, color: 0 },
+    { count: 4, dist: 32, speed: 4, size: 0, color: 0 },
+    { count: 5, dist: 32, speed: 4, size: 0, color: 0 },
+    { count: 1, dist: 23, speed: 4, size: 0, color: 4 },
+    { count: 70, dist: 29, speed: 4, size: 1, color: 2 },
     { count: 0, dist: 16, speed: 4, size: 0, color: 0 },
   ],
 ];
