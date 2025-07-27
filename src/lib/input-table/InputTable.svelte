@@ -7,6 +7,7 @@
   import CopyToClipboard from '$lib/input-table/CopyToClipboard.svelte';
   import RestartButton from '$lib/input-table/RestartButton.svelte';
   import ExponentSlider from '$lib/input-table/ExponentSlider.svelte';
+  import GithubLogo from '$lib/assets/github-mark.svg';
 
   let firstDisabledRow = $derived(getFirstDisabledRow());
 </script>
@@ -87,7 +88,8 @@
       <tr>
         <th></th>
         <th class="preset">Auto</th>
-        <th class="toggle-color" colspan="4">Ratio Exponent</th>
+        <th class="toggle-color" colspan="3">Ratio Exponent</th>
+        <th class="github">GitHub</th>
       </tr>
     </thead>
     <tbody>
@@ -95,17 +97,14 @@
         <th>&nbsp;</th>
         <td class="preset">
           <input type="checkbox" name="toggle-c" bind:checked={switches.exponential} class="toggle preset" />
-          <!--          <div class="mt-2 flex justify-between px-2.5 text-xs text-transparent">0</div>-->
         </td>
-        <td colspan="4" class="toggle-color">
+        <td colspan="3" class="toggle-color">
           <ExponentSlider />
-          <!--          <div class="mt-2 flex justify-between px-2.5 text-xs">-->
-          <!--            <span>-4</span>-->
-          <!--            <span>-2</span>-->
-          <!--            <span>0</span>-->
-          <!--            <span>&nbsp;2</span>-->
-          <!--            <span>&nbsp;4</span>-->
-          <!--          </div>-->
+        </td>
+        <td class="github">
+          <a href="https://github.com/joel-s/orbitron">
+            <img src={GithubLogo} width={25} alt="GitHub" />
+          </a>
         </td>
       </tr>
     </tbody>
@@ -137,7 +136,11 @@
     color: var(--retro7);
   }
 
-  .copy-button {
+  .copy-button,
+  .github {
     color: var(--retro8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 </style>
