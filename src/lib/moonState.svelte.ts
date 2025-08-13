@@ -98,6 +98,15 @@ export const presets: MoonSpec[][] = [
     { count: 0, dist: 16, speed: 4, size: 0, color: 0 },
   ],
   [
+    // From Maria Johnsenberg
+    { count: 1, dist: 0, speed: 0, size: 0, color: 0 },
+    { count: 13, dist: 37, speed: 13, size: 1, color: 1 },
+    { count: 3, dist: 37, speed: 7, size: 1, color: 1 },
+    { count: 3, dist: 13, speed: 3, size: 1, color: 1 },
+    { count: 3, dist: 13, speed: 17, size: 5, color: 1 },
+    { count: 0, dist: 16, speed: 4, size: 0, color: 0 },
+  ],
+  [
     // From Dad
     { count: 1, dist: 0, speed: 0, size: 0, color: 0 },
     { count: 4, dist: 32, speed: 4, size: 0, color: 0 },
@@ -107,11 +116,5 @@ export const presets: MoonSpec[][] = [
     { count: 0, dist: 16, speed: 4, size: 0, color: 0 },
   ],
 ];
-
-console.log(
-  presets.map((preset) =>
-    preset.map(({ count, dist, speed, size, color }) => JSON.stringify({ count, dist: dist * 4, speed, size, color }))
-  )
-);
 
 export const moonState = $state<MoonSpec[]>(presets[0]);
